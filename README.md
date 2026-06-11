@@ -4,6 +4,13 @@
 
 <https://kotlinlang.org/>
 
+## Make a kotlin project
+
+``` shell
+mkdir hello
+cd hello
+gradle init --type kotlin-application --dsl kotlin
+```
 
 ## Common Issue
 
@@ -21,19 +28,22 @@ java -XshowSettings:properties -version
 
 find `java.home`
 
-### set JAVA_HOME
+### set JAVA_HOME (temporary)
 
-e.g.) Emacs
+Emacs shell
 
+``` shell
 setenv JAVA_HOME `<path>`
+```
+
+e.g.)
 
 ``` shell
 setenv JAVA_HOME "C:\\Program Files\\Java\\jdk-21"
 ```
 
-clean
+Powershell
 
 ``` shell
-./gradlew clean
+$env:JAVA_HOME = "C:\\Program Files\\Java\\jdk-21"
 ```
-
