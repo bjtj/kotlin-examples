@@ -28,3 +28,5 @@ winget install JetBrains.KtorCLI
 ``` shell
 ktor new
 ```
+
+`Ctrl + g`
